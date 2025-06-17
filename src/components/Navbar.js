@@ -40,21 +40,30 @@ const links = [
 
 export default function Navbar() {
   return (
-    <nav className="absolute top-0 left-0 w-full z-10 flex text-white px-32 py-4 h-fit items-center">
-      <div className="relative h-12 w-12 mr-3 select-none">
-        <Image
-          src="/weblogo.png"
-          alt="Botnix Cloud Logo"
-          fill
-          priority
-          sizes="100%"
-          className="object-contain rounded-lg"
-          draggable={false}
-        />
+    <nav className="absolute top-0 left-0 w-full z-20 flex text-white px-32 py-4 h-fit items-center bg-transparent">
+      <div className="flex items-center gap-3 bg-[#0e0e0e]/80 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl shadow-md select-none">
+        {/* Logo with gradient ring */}
+        <div className="relative h-12 w-12 rounded-lg bg-gradient-to-br from-purple-600 to-pink-500 p-[2px]">
+          <div className="relative h-full w-full rounded-lg bg-[#0e0e0e]">
+            <Image
+              src="/weblogo.png"
+              alt="Botnix Cloud Logo"
+              fill
+              priority
+              sizes="100%"
+              className="object-contain rounded-lg"
+              draggable={false}
+            />
+          </div>
+        </div>
+
+        {/* Gradient Text */}
+        <h1 className="text-2xl font-bold bg-gradient-to-br from-purple-600 to-pink-500 bg-clip-text text-transparent">
+          Botnix Cloud
+        </h1>
       </div>
-      <h1 className="text-2xl font-bold bg-gradient-to-br from-purple-600 to-pink-500 bg-clip-text text-transparent select-none">
-        Botnix Cloud
-      </h1>
+
+      {/* Navigation Links */}
       <ul className="mx-auto flex gap-4">
         {links.map((link) => (
           <li key={link.name} className="mr-4 flex items-center">
