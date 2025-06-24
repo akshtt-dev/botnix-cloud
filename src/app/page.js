@@ -46,7 +46,7 @@ export default function Home() {
           draggable={false}
         />
         <Link
-          href="https://discord.gg/botnixcloud"
+          href="https://discord.gg/puRYauV533"
           target="_blank"
           rel="noopener noreferrer"
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#0e0e0e]/80 backdrop-blur-md shadow-lg border border-white/10 px-8 py-4 rounded-2xl flex items-center gap-4 hover:scale-105 transition-all duration-300"
