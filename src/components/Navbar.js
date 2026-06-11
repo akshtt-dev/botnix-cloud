@@ -21,7 +21,7 @@ const links = [
   },
   {
     name: "Panel",
-    href: "https://panel.botnix.cloud",
+    href: "https://panel.botnix.in",
     icon: <RiComputerFill className="inline-block" />,
   },
   {
@@ -31,12 +31,12 @@ const links = [
   },
   {
     name: "Store",
-    href: "https://billing.botnix.cloud",
+    href: "https://billing.botnix.in",
     icon: <IoStorefront className="inline-block" />,
   },
   {
     name: "Status",
-    href: "https://status.botnix.cloud",
+    href: "https://status.botnix.in",
     icon: <SlGraph className="inline-block" />,
   },
 ];
